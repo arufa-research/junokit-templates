@@ -3,11 +3,11 @@
   "title": "Constants",
   "type": "object",
   "required": [
-    "count",
+    "factorial",
     "owner"
   ],
   "properties": {
-    "count": {
+    "factorial": {
       "type": "integer",
       "format": "int32"
     },

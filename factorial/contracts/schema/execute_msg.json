@@ -5,28 +5,16 @@
     {
       "type": "object",
       "required": [
-        "increment"
+        "factorial"
       ],
       "properties": {
-        "increment": {
-          "type": "object"
-        }
-      },
-      "additionalProperties": false
-    },
-    {
-      "type": "object",
-      "required": [
-        "reset"
-      ],
-      "properties": {
-        "reset": {
+        "factorial": {
           "type": "object",
           "required": [
-            "count"
+            "number"
           ],
           "properties": {
-            "count": {
+            "number": {
               "type": "integer",
               "format": "int32"
             }

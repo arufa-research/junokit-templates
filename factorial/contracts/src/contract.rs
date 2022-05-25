@@ -24,6 +24,7 @@ pub fn instantiate(
         .add_attribute("sender", _info.sender.clone()))
 }
 
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
     deps: DepsMut,
     env: Env,
@@ -34,7 +35,7 @@ pub fn execute(
         ExecuteMsg::Factorial { number } => try_factorial(deps, env, info, number),
     }
 }
-
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
     match msg {
            QueryMsg::GetFactorial {} => query_factorial(deps),

@@ -23,7 +23,7 @@ pub fn instantiate(
         .add_attribute("action", "initialisation")
         .add_attribute("sender", _info.sender.clone()))
 }
-
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
     deps: DepsMut,
     env: Env,
@@ -35,7 +35,7 @@ pub fn execute(
         ExecuteMsg::Reset { count } => try_reset(deps, env, info, count),
     }
 }
-
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(deps: Deps, _env: Env, msg: QueryMsg) -> StdResult<Binary> {
     match msg {
            QueryMsg::GetCount {} => query_count(deps),

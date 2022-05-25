@@ -3,10 +3,10 @@
   "title": "InstantiateMsg",
   "type": "object",
   "required": [
-    "count"
+    "factorial"
   ],
   "properties": {
-    "count": {
+    "factorial": {
       "type": "integer",
       "format": "int32"
     }
