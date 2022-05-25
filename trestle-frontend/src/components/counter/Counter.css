@@ -45,3 +45,14 @@
     letter-spacing: 1px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
+.inc-btn-wrapper button:disabled {
+    background: #a69cac;
+  }
+  .inc-btn-wrapper button:disabled:hover {
+    transform: scale(1);
+    color: rgb(78, 78, 78);
+    color: white;
+    letter-spacing: normal;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+  }
