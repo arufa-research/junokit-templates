@@ -1,0 +1,1 @@
+export const API_URL = 'https://rpc.uni.juno.deuslabs.fi/';
