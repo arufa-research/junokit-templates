@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Counter App",
+  "name": "This app maintain the count of a variable.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "flatwhite.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },

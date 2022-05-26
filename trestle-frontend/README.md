@@ -1,46 +1,21 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app maintains a counter which is incremented everytime a user clicks the 'Increase Count' button.
 
-## Available Scripts
+## Connecting to Keplr
 
-In the project directory, you can run:
+In order to use the app you need to connect your Keplr Wallet to the app. In this case follow these steps:
 
-### `npm start`
+1. Most of the time, the app automatically sends a connection request to Keplr. If it doesn't, just click on the 'Connect Wallet' button.
+2. A Keplr window will open up if you are running the app in a new browser session. The user should enter their Keplr password and authenticate themselves.
+3. If the user is making the connection for the first time on his browser, another Keplr window asks the user to verify the connection if he /she trusts the network.
+4. After verifying, the connection will be made in few seconds and the user should see 'Increment Count' button in place of 'Connect Wallet' button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Incrementing Counter
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Incrementing the counter is as simple as it sounds. The user needs to follow these steps:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Click on the 'Increment Count' button. Make sure you have at least 0.6-1 JUNO tokens in your account for the gas fees.
+2. A Keplr window will appear asking you to Approve the transaction and choose the fees among 'Low', 'Average', and 'High'.
+3. Chose the appropriate fee and click 'Approve' button to complete the transaction.
+4. After few seconds the counter will automatically update to the new value.
