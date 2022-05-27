@@ -6,7 +6,7 @@ import arufaLogo from '../../images/arufa.png';
 import './LogoComponent.css'
 const LogoComponent = () => {
   return (<div>
-    <div className='logo-header-text'>CO-DEVELOPED BY</div>
+    <div className='logo-header-text'>Built With</div>
     <div className='all-logo-wrapper'>
         <div className='juno-logo-wrapper'>
             <img src={juno}/>
