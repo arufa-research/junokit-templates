@@ -1,4 +1,4 @@
-# trestle-templates
+# junokit-templates
 
 This repo contains following juno contracts examples:
 - Counter

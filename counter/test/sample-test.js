@@ -1,7 +1,7 @@
 const { use } = require("chai");
-const { Contract, getAccountByName, trestleChai } = require("juno-trestle");
+const { Contract, getAccountByName, junokitChai } = require("junokit");
 
-use(trestleChai);
+use(junokitChai);
 
 describe("erc-20", () => {
 
