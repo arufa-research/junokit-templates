@@ -1,4 +1,4 @@
-const { Contract, getAccountByName, getLogs } = require("juno-trestle");
+const { Contract, getAccountByName, getLogs } = require("junokit");
 
 async function run() {
   const runTs = String(new Date());
