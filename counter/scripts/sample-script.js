@@ -13,7 +13,7 @@ async function run() {
   const deploy_response = await counter_contract.deploy(
     contract_owner,
     { // custom fees
-      amount: [{ amount: "90000", denom: "ujunox" }],
+      amount: [{ amount: "900000", denom: "ujunox" }],
       gas: "35000000",
     }
   );

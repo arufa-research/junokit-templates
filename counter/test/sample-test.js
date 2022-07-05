@@ -1,5 +1,5 @@
 const { use } = require("chai");
-const { Contract, getAccountByName, junokitChai } = require("junokit");
+const { Contract, getAccountByName, trestleChai } = require("junokit");
 
 use(junokitChai);
 
