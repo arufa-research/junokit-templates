@@ -1,12 +1,12 @@
-const { Contract, getAccountByName, getLogs } = require("junokit");
+import { getAccountByName } from "junokit";
+
+import { CounterContract } from "../artifacts/typescript_schema/Counter";
 
 async function run() {
   const runTs = String(new Date());
   const contract_owner = getAccountByName("account_0");
-  const other = getAccountByName("account_1");
-  const counter_contract = new Contract("counter");
+  const counter_contract = new CounterContract();
   await counter_contract.setUpclient();
-  await counter_contract.parseSchema();
 
   console.log("Client setup done!! ");
 
@@ -24,10 +24,10 @@ async function run() {
     }, `deploy test ${runTs}`, contract_owner);
   console.log(contract_info);
 
-  const inc_response = await counter_contract.tx.increment({account: contract_owner});
+  const inc_response = await counter_contract.increment({account: contract_owner});
   console.log(inc_response);
 
-  const response = await counter_contract.query.get_count();
+  const response = await counter_contract.getCount();
   console.log(response);
 
 }
