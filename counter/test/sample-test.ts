@@ -5,7 +5,7 @@ import { CounterContract } from "../artifacts/typescript_schema/Counter";
 
 use(junokitChai);
 
-describe("erc-20", () => {
+describe("counter", () => {
 
   async function setup() {
     const contract_owner = getAccountByName("account_0");
