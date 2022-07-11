@@ -1,8 +1,8 @@
-# Sample project (Counter) with TS scripts and tests
+# Sample project (Multiple contracts) with TS scripts and tests
 
-This is a boilerplate `junokit` project with counter smart contract example.
+This is a boilerplate `junokit` project with counter and factorial smart contract example.
 
-To run the `counter` project:
+To run the project:
 
 - First you need to set the configuration in `junokit.config.js` file:
 
@@ -28,7 +28,7 @@ To run the `counter` project:
 
 In the project folder you'll have following items:
 
-- `contracts/`: Directory for contracts files:
+- `contracts/`: Directory for contracts dirs `counter` and `factorial` and each have:
 
   - `src/` : It has source rust contract files.
   - `examples/` : It has rust file to genrate schema from src files.
@@ -36,7 +36,7 @@ In the project folder you'll have following items:
 
 - `scripts/`: Directory for scripts to deploy and interact with your smart contracts:
 
-  - `sample-script.ts` : This script deploys the counter contract and runs the `increment` txn and `get_count` query.
+  - `sample-script.ts` : This script deploys the counter and factorial contract and runs the `increment` txn and `get_count` query.
 
 - `test/`: Directory for test files for testing your smart contracts:
 
@@ -44,7 +44,3 @@ In the project folder you'll have following items:
   - You can add tests for your scripts here.
 
 - `junokit.config.js`: Junokit configuration file.
-
-# Frontend
-
-This folder contains frontend code for counter example.
