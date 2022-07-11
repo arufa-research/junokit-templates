@@ -44,7 +44,3 @@ In the project folder you'll have following items:
   - You can add tests for your scripts here.
 
 - `junokit.config.js`: Junokit configuration file.
-
-# Frontend
-
-This folder contains frontend code for erc-20 example.
