@@ -39,6 +39,12 @@ module.exports = {
     default: networks.testnet,
     localnet: networks.localnet,
   },
+  external_contracts: {
+    staked: {
+      default: "juno1yqum3uy7jx60qarnputjzn6fewmlwc8flvzs6q0raw7ec6l4p00qwytzcs",
+      mainnet: "juno1yqum3uy7jx60qarnputjzn6fewmlwc8flvzs6q0raw7ec6l4p00qwytzcs"
+    }
+  },
   mocha: {
     timeout: 60000
   },
