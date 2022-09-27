@@ -10,6 +10,9 @@ export const useConnectWallet = () => {
   const setWalletState = useSetRecoilState(walletState);
   return async () => {
     // await sleep(1);
+    console.log(
+      "We are heree!"
+    );
     await (window as any).keplr?.experimentalSuggestChain(chainInfo);
     const chainId = 'uni-3';
     await (window as any).keplr?.enable(chainId);

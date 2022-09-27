@@ -1,4 +1,4 @@
 export const contractAddress = {
-    at:'juno1ull9s4el2pmkdevdgrjt6pwa4e5xhkda40w84kghftnlxg4h3knqrwy87k',
+    at:'juno1kkwhav7ag06t6xfsrwl2pzu44kaqnrh38ea6t5jv7zan7zy6wlgqlahf32',
     id:'contractAddress'
 }

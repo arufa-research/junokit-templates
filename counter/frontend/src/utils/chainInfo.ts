@@ -8,7 +8,7 @@ export const chainInfo = {
 	// RPC endpoint of the chain.
 	rpc: API_URL,
 	// REST endpoint of the chain.
-	rest: "https://api.uni.junonetwork.io/",
+	rest: "https://rpc.uni.juno.deuslabs.fi/",
 	// Staking coin information
 	stakeCurrency: {
 	    // Coin denomination to be displayed to the user.
