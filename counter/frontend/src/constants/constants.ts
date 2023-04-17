@@ -1,1 +1,0 @@
-export const API_URL = 'https://rpc.uni.junonetwork.io/';
